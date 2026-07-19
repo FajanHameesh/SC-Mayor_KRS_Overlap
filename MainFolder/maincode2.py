@@ -47,5 +47,6 @@ def runn(df1,df2,paralel:str):
     lambda x: "✅" if x else "❌"
     )
     df2New = df2[df2['overlap'] == '❌']
-    return df2, df2New
+    df2baru = df2New[df2New["paralel"].duplicated(keep=False)]
+    return df2, df2New, df2baru
 
