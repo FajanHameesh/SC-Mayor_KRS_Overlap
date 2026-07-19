@@ -7,3 +7,8 @@ HOW TO USE:
 
 so there's a set of number at the end of the URL for each course, that's what I mean with 'ID'
 I don't know if these IDs listed somewhere but currently I searched them manually based on my courses.
+
+Then you put them in the streamlit app
+for the rest, I hope you can understand what the dropdown menu and the analize button is for, hehe
+
+Hope this help, or inspire, Thank you! 
