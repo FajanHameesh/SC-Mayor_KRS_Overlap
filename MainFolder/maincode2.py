@@ -43,11 +43,14 @@ def runn(df1,df2,paralel:str):
     # ),
     # axis=1
     # )
+
     df2 = df2[['matkul','jenis','paralel','hari','jam','overlap']]
+
     df2["overlap"] = df2["overlap"].apply(
     lambda x: "✅" if x else "❌"
     )
     df2New = df2[df2['overlap'] == '❌']
     df2baru = df2New[df2New["paralel"].duplicated(keep=False)]
+    
     return df2, df2New, df2baru
 
