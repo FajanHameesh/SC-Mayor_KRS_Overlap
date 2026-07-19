@@ -2,9 +2,9 @@ import pandas as pd
 
 def runn(df1,df2,paralel:str):    
     df1 = df1[df1['paralel']==paralel]
-    df1 = df1[['matkul','hari','jam','paralel']]
+    df1 = df1[['matkul','hari','jam','paralel','jenis']]
 
-    df2 = df2[['matkul','hari','jam','paralel']]
+    df2 = df2[['matkul','hari','jam','paralel','jenis']]
 
     df1[['mulai','selesai']] = df1['jam'].str.split("-",n=1,expand=True)
     df2[['mulai','selesai']] = df2['jam'].str.split("-",n=1,expand=True)
