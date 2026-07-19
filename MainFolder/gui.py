@@ -11,6 +11,7 @@ def gui():
     st.image(base_dir/"banner.png", use_container_width=False)
 
     st.title("SC-Mayor Overlap Tracker awkwkw")
+    st.write('[Readme](https://github.com/FajanHameesh/SC-Mayor_KRS_Overlap/blob/main/README.md)')
 
     semester = st.selectbox(
         "Semester: ",
