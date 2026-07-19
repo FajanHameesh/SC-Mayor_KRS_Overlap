@@ -10,11 +10,9 @@ def listMK():
     response = requests.get(use_url)
     data = response.json()
 
-    result0 = []
+    result0 = {}
     for idx,i in enumerate(data):
-        hasil = (f'{i['KurikulumId']} - {i['Nama']}')
-        result0.append(hasil)
-        print(f'\n{i['KurikulumId']} - {i['Nama']} Done')
+        result0[i["Nama"]] = int(i['KurikulumId'])
     return result0
 
 
