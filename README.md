@@ -12,3 +12,6 @@ Then you put them in the streamlit app
 for the rest, I hope you can understand what the dropdown menu and the analize button is for, hehe
 
 Hope this help, or inspire, Thank you! 
+
+Accessible Web Source:
+krs.ipb.ac.id (for real, just this one)
