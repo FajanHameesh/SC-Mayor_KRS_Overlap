@@ -29,7 +29,7 @@ def scrapper(id_ganjil_lower,id_ganjil_upper,id_genap_lower,id_genap_upper):
                 "hari":hari,
                 "jam":jam,
                 "ruangan":ruangan,
-                "JadwalID":k["JadwalKuliahId"]
+                #"JadwalID":k["JadwalKuliahId"]
             })
             hasil_list.append(hasil)
         return hasil_list
