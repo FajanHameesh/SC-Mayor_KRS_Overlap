@@ -22,6 +22,7 @@ def gui():
     if semester == 'Ganjil':
         bound3 = 196041
         bound4 = bound3
+        semId = 113
 
         with col1:
             bound1 = st.number_input(
@@ -42,6 +43,7 @@ def gui():
     elif semester == 'Genap':      
         bound1 = 196041
         bound2 = bound1
+        semId = 114
         with col1:
             bound3 = st.number_input(
             "ID paling bawah matkul semester terkait",
@@ -58,7 +60,7 @@ def gui():
         )
             st.info(f"{codeinf(bound4)}")
 
-    listmk = listMK()
+    listmk = listMK(semId)
     bound5_raw = st.selectbox(
         "Matkul SC",
         listmk.keys()
